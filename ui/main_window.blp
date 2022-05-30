@@ -1,0 +1,22 @@
+using Gtk 4.0;
+
+ApplicationWindow main_window {
+    title: "Example App";
+    default-width: 800;
+    default-height: 600;
+    
+    Box {
+        orientation: vertical;
+        valign: center;
+        halign: center;
+
+        Label counter_label { }
+        
+        Button increment_button {
+            label: "Increment";
+        }
+        Button decrement_button {
+            label: "Decrement";
+        }
+    }
+}
